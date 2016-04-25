@@ -1,58 +1,45 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
-# Challenge Template
+# Grandma Warmup
 
-Use this template to structure your READMEs for diagnostics.
-
-Be sure to include a recent [`LICENSE`](LICENSE) and Markdown linter
-configuration ([`.remarkrc`](.remarkrc)). Also, include an appropriate
-`.gitignore`; these are usually found in specific technology templates, for
-example [js-template](https://www.github.com/ga-wdi-boston/js-template).
+Write a Deaf Grandma program.
 
 ## Prerequisites
 
--   Topics with which developers should be familiar with.
--   Prerequisites are "just-in-time", so if I have a prerequisite that mentions
-    Sass, I would **not** need to include CSS as a prerequisite.
--   [Links to previous materials](https://www.github.com/ga-wdi-boston/example)
-    are often useful.
--   In a challenge, it is useful to link to reference material, such as talk
-    repositories.
+-   Ruby
 
 ## Instructions
 
 1.  Fork and clone this repository.
 1.  Change into the new directory.
-1.  Install dependencies.
-1.  Create and checkout a new branch to work on.
-1.  Fulfill the listed requirements.
-
-Starter code is available in [`lib/challenge.js`](lib/challenge.js). A pull
-request is not required, but it is necessary if you want a code review.
-
-You may wish to refer to [FAQs](https://github.com/ga-wdi-boston/meta/wiki/)
-related to [forking,
-cloning](https://github.com/ga-wdi-boston/meta/wiki/ForkAndClone).
+1.  Create and checkout a new branch called warmup to work on.
+1.  Write your code in grandma.rb
 
 ## Requirements
 
-Describe behavioral requirements as you'll be using them in tests. That is,
-list requirements in language that describes how the written code will be used,
-not how it will be written, with the exception of constraints you may wish to
-place on implementation. It's a good idea to include the below paragraph
-verbatim.
+Whatever you say to grandma (whatever you type in), she should respond with
 
-You should be running `grunt nag` before diagnosing any bugs, since it finds
-some of the most common sources of errors. After `grunt nag` passes, you should
-run `grunt test` to run the included tests. Tests will tell you whether of not
-you've met these requirements.
+> HUH?!  SPEAK UP, SONNY!
+
+unless you shout it (type in all capitals).
+
+If you shout, she can hear you (or at least she thinks so) and yells back
+
+> NO, NOT SINCE 1938!
+
+To make your program really believable, have grandma shout a different year each time; maybe any year at random between 1930 and 1950.
+
+You can't stop talking to grandma until you shout BYE.
 
 ## Bonus
 
-Bonuses are described after the requirements, if included. They should be worked
-on **only after** passing requirements.
+1.  What if grandma doesn't want you to leave? When you shout BYE, she could pretend not to hear you. Change your previous program so that you have to shout BYE three times in a row. Make sure to test your program: if you shout BYE three times, but not in a row, you should still be talking to grandma.
 
-Sometimes, we ask questions that promote thinking critically about code.
+1.  Have grandma tell you a story. Load the story from a .yml file. Grandma will only tell you one line of the story at a time, and to hear the next story you have to tell her "AND THEN".
+
+## Source
+
+Chapter 6 in Chris Pine's online [Learn to Program](http://pine.fm/LearnToProgram/?Chapter=06) tutorial.
 
 ## [License](LICENSE)
 
